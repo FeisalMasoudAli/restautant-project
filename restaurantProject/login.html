@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            /* background-color: #9b59b6; */
+            background-color: #e8eaf6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+        }
+
+        form .customer_btn_submit {
+           background: linear-gradient(to left, #673ab7, #03a9f4);
+           border-radius: 20px;
+           color: #fff;
+       }
+    
+    </style>    
+</head>
+    <body>
+        <div style="background-image: url('images/aaa.jpg');">
+
+      
+        <div class="container login-container" style="height: auto;">
+            <div class="header-login">
+                <h2 class="text-center">
+                    Login form
+                </h2>
+            </div>
+            <form action="123.php" method="POST" class="login-form" onsubmit="return checkInput()">
+                <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" id="username" name="username">
+                    <span><i class="form-icons  fas fa-check"></i></span></i>
+                    <span><i class="form-icons  fas fa-circle-xmark"></i></span></i>
+                    <small class="small-login">Error Message</small>
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" id="password">
+                    <span><i class="form-icons  fas fa-check"></i></span></i>
+                    <span><i class="form-icons  fas fa-circle-xmark"></i></span></i>
+                    <i class="show_eye_icon bi bi-eye-slash" id="iconPassword"></i>
+                    <small class="small-login">Error Message</small>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="submit" id="btn_submit" name="login-submit">sign in</button>
+                        </div><br>
+                        <!-- <div class="col-6 mb-3">
+                            <a href="" class="btn btn-block btn-signup-login" style="color: #fff;">sign up</a>
+                        </div> -->
+                        <a href="Form.html" class="ml-3">Register here</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
